@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May 22 18:27:08 2022
+# Make data base, printed on Mon Jun  6 10:42:23 2022
 
 # Variables
 
@@ -51,15 +53,15 @@ VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:49030
+JOURNAL_STREAM = 8:45937
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
 SNAP_INSTANCE_NAME = code
 # environment
 SNAP_ARCH = amd64
-# makefile
-MAKEFILE_LIST := 
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
 # automatic
 @F = $(notdir $@)
 # environment
@@ -71,11 +73,11 @@ MAKELEVEL := 0
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=aaf962ad1d685547c42552f46289bde8
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=98b66bcc6d7f0f85b7aa4b6f629d7090
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 2039
+MANAGERPID = 1755
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -91,7 +93,7 @@ PATH = /home/ashin/.nvm/versions/node/v12.22.12/bin:/home/ashin/bin:/usr/local/s
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/ashin-Lenovo-Legion-5-15IMH05:@/tmp/.ICE-unix/2261,unix/ashin-Lenovo-Legion-5-15IMH05:/tmp/.ICE-unix/2261
+SESSION_MANAGER = local/ashin-Lenovo-Legion-5-15IMH05:@/tmp/.ICE-unix/1974,unix/ashin-Lenovo-Legion-5-15IMH05:/tmp/.ICE-unix/1974
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -111,7 +113,7 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = a3413a3fc8ce46d6ab3ceb8219cc6196
+INVOCATION_ID = 4e587e710db746eb827a9fdfbbb82d0e
 # environment
 GDK_PIXBUF_MODULEDIR = /snap/code/97/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
@@ -135,7 +137,7 @@ PWD = /media/ashin/ashin/project/MERN-sample
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 2227
+SSH_AGENT_PID = 1940
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -191,7 +193,7 @@ SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b2f1f7a5-1154-4c14-ad3f-5a7931e500b9.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-72bcf085-de09-476b-827a-12d6858cbbdb.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -201,7 +203,7 @@ SNAP_REVISION = 97
 # environment
 LC_MONETARY = bho_NP
 # makefile
-.DEFAULT_GOAL := 
+.DEFAULT_GOAL := run-dev
 # environment
 XDG_CURRENT_DESKTOP = Unity
 # automatic
@@ -249,11 +251,11 @@ LC_ALL = C
 # environment
 DBUS_STARTER_BUS_TYPE = session
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/78e02114_68a3_4c1f_9ca9_12504e6bac51
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/39b10e05_0179_4a1a_930c_642c70038ffa
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.694
+GNOME_TERMINAL_SERVICE = :1.436
 # default
 SUFFIXES := 
 # environment
@@ -275,24 +277,22 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 54018
+VSCODE_PID = 24583
 # environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=aaf962ad1d685547c42552f46289bde8
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=98b66bcc6d7f0f85b7aa4b6f629d7090
 # variable set hash-table stats:
-# Load=134/1024=13%, Rehash=0, Collisions=19/156=12%
+# Load=134/1024=13%, Rehash=0, Collisions=19/159=12%
 
 # Pattern-specific Variable Values
+ 
 
 # No pattern-specific variable values.
 
 # Directories
 
-# . (device 66305, inode 452461): 8 files, no impossibilities.
- 
-make: *** No rule to make target 'all'.  Stop.
+# . (device 66305, inode 452461): 10 files, no impossibilities.
 
-
-# 8 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -310,16 +310,9 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  File does not exist.
+#  Last modified 2022-05-31 17:14:14.304562
 #  File has been updated.
-#  Failed to be updated.
-
-# Not a target:
-makefile:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Failed to be updated.
+#  Successfully updated.
 
 # Not a target:
 .DEFAULT:
@@ -327,27 +320,27 @@ makefile:
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-GNUmakefile:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Failed to be updated.
+run-dev:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 2):
+	docker-compose up
 
 # files hash-table stats:
-# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
+# Load=5/1024=0%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 16 / storage = 142 B / avg = 8 B
-# current buf: size = 8162 B / used = 142 B / count = 16 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 16 / storage = 148 B / avg = 9 B
+# current buf: size = 8162 B / used = 148 B / count = 16 / avg = 9 B
 
-# strcache performance: lookups = 19 / hit rate = 15%
+# strcache performance: lookups = 21 / hit rate = 23%
 # hash-table stats:
-# Load=16/8192=0%, Rehash=0, Collisions=1/19=5%
-# Finished Make data base on Sun May 22 18:27:08 2022
+# Load=16/8192=0%, Rehash=0, Collisions=1/21=5%
+# Finished Make data base on Mon Jun  6 10:42:23 2022
 
  

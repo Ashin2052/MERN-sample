@@ -1,10 +1,14 @@
-FROM node:14.16.0-alpine3.10
-# Set working directory
-WORKDIR /usr/app
-# Install app dependencies
-COPY package*.json ./
-RUN npm install -qy
-# Copy app to container
+FROM  node:14-slim
+
+WORKDIR /usr/scr/app
+
+COPY ./package.json ./
+
+COPY ./package-lock.json ./
+
+RUN npm install
+
 COPY . .
-# Run the "dev" script in package.json
-CMD ["npm", "run", "dev"]
+
+EXPOSE 3000
+CMD ["npm","start"]

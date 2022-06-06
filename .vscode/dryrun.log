@@ -1,6 +1,5 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/media/ashin/ashin/project/MERN-sample'
+docker-compose up
 make: Leaving directory '/media/ashin/ashin/project/MERN-sample'
  
-make: *** No targets specified and no makefile found.  Stop.
-
